@@ -1,10 +1,13 @@
 require_relative './spec_helper.rb'
 require_relative '../fizzbuzz.rb'
-def fizzbuzz(int)
-  if int % 15 == 0
-    "FizzBuzz"
-  elsif int % 3 == 0
-      "Fizz"
-  elsif int % 5 == 0
-      "Buzz"
+1.step(100,1) do |i|
+    if (i % 5) == 0 && (i % 3) ==0
+        puts 'FizzBuzz'
+    elsif (i % 5) == 0
+        puts 'Buzz'
+    elsif (i % 3) == 0
+        puts 'Fizz'
+    else
+        puts i
+    end
 end
