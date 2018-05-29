@@ -1,11 +1,15 @@
-1.step(100,1) do |i|
-    if (i % 5) == 0 && (i % 3) ==0
-        puts 'FizzBuzz'
-    elsif (i % 5) == 0
-        puts 'Buzz'
-    elsif (i % 3) == 0
-        puts 'Fizz'
+def fizz_buzz_1(max)
+  arr = []
+  (1..max).each do |n|
+    if ((n % 3 == 0) && (n % 5 == 0))
+      arr << "FizzBuzz"
+    elsif (n % 3 == 0)
+      arr << "Fizz"
+    elsif (n % 5 == 0)
+      arr << "Buzz"
     else
-        puts i
+      arr << n
     end
+  end
+  return arr
 end
