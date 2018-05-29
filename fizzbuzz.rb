@@ -1,4 +1,4 @@
-def fizz_buzz_1(max)
+def fizz_buzz(max)
   arr = []
   (1..max).each do |n|
     if ((n % 3 == 0) && (n % 5 == 0))
