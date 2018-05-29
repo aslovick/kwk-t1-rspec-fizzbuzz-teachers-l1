@@ -12,4 +12,3 @@ it 'returns "Buzz" when the number is divisible by 5' do
   expect(buzz_5).to eq("Buzz")
 end
 end
- 
