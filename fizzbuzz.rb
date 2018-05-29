@@ -1,5 +1,3 @@
-require_relative './spec_helper.rb'
-require_relative '../fizzbuzz.rb'
 1.step(100,1) do |i|
     if (i % 5) == 0 && (i % 3) ==0
         puts 'FizzBuzz'
